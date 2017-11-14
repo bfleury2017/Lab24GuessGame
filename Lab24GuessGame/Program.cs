@@ -10,6 +10,7 @@ namespace Lab24GuessGame
     {
         static void Main(string[] args)
         {
+            Console.WriteLine();
         }
     }
 }
