@@ -10,7 +10,23 @@ namespace Lab24GuessGame
     {
         static void Main(string[] args)
         {
-            Console.WriteLine();
+            do
+            {
+                Console.Write("Play guessing game? [Y|N]: ");
+                char response = Console.ReadLine().ToUpper()[0];
+
+                if (response.Equals('Y'))
+                {
+                    GameClass game = new GameClass();
+                    game.PlayGame();
+                }
+                else
+                {
+                    break;
+                }
+            } while (true);
+
+            Console.WriteLine("bye");
         }
     }
 }
